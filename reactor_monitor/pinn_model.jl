@@ -1,5 +1,3 @@
-# pinn_model.jl
-
 using Lux, DiffEqFlux, Optimization, OptimizationOptimJL, Random, Plots
 using ComponentArrays, Zygote, LinearAlgebra, Statistics, Printf
 using Sobol, OptimizationOptimisers, ForwardDiff
@@ -249,7 +247,3 @@ mkpath("trained_model")
 
 println("Trained PINN parameters and state saved to trained_model/pinn_params.jld2")
 
-# The rest of the plotting and scenario testing from your original script
-# can be kept here for validation, but is not strictly needed for the real-time part.
-# For brevity, I'm omitting the original plotting code here, assuming you have it elsewhere
-# or can re-run your initial script to generate those plots.
